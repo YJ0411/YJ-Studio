@@ -72,7 +72,7 @@ function App() {
   return <main className="page-shell"><div className="mesh mesh-purple" aria-hidden="true" /><div className="mesh mesh-mint" aria-hidden="true" /><div className="grain" aria-hidden="true" /><Nav t={t} language={language} setLanguage={setLanguage} go={go} />{route === 'home' && <HomePage t={t} go={go} />}{route === 'custom-build' && <CustomBuildPage t={t} go={go} />}{route === 'faq' && <FaqPage t={t} />}{route === 'contact' && <ContactPage t={t} />}<Footer t={t} go={go} /></main>
 }
 
-function LogoMark() { return <svg className="logo-mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 8h11l15 23L47 8h11L38 39v17H26V39L6 8Z" /><path d="M50 8h8v31c0 11-6 18-17 18-8 0-14-4-18-11l8-7c2 4 5 6 9 6 6 0 10-4 10-10V8Z" /></svg> }
+function LogoMark() { return <img className="logo-mark" src={`${import.meta.env.BASE_URL}logo.png`} alt="" aria-hidden="true" /> }
 
 function Logo({ go }) { return <button className="brand" type="button" onClick={() => go('home')} aria-label="YJ Studio home"><LogoMark /><span>YJ STUDIO</span></button> }
 

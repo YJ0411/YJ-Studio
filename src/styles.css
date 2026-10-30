@@ -69,8 +69,8 @@ a { color: inherit; text-decoration: none; }
 }
 
 .brand { display: inline-flex; align-items: center; gap: 0.6rem; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.18em; }
-.logo-mark { width: 1.7rem; height: 1.7rem; fill: none; stroke: var(--mint); stroke-width: 3.2; stroke-linecap: square; stroke-linejoin: bevel; filter: drop-shadow(0 0 7px rgba(181, 247, 228, 0.42)); transition: color 600ms var(--curve), filter 600ms var(--curve); }
-.brand:hover .logo-mark { color: var(--text); filter: drop-shadow(0 0 8px rgba(181, 247, 228, 0.64)); }
+.logo-mark { width: 1.7rem; height: 1.7rem; flex: 0 0 auto; border-radius: 0.35rem; object-fit: cover; filter: drop-shadow(0 0 7px rgba(181, 247, 228, 0.42)); transition: filter 600ms var(--curve), transform 600ms var(--curve); }
+.brand:hover .logo-mark { transform: scale(1.04); filter: drop-shadow(0 0 8px rgba(181, 247, 228, 0.64)); }
 .nav-links { display: flex; align-items: center; gap: 1.8rem; margin-left: auto; color: var(--muted); font-size: 0.76rem; }
 .nav-links a { transition: color 600ms var(--curve); }
 .nav-links a:hover { color: var(--text); }
